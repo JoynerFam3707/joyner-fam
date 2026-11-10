@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#650d16">
+  <meta name="description" content="The Joyner Family — our roots, our memories, our legacy.">
+  <title>The Joyner Family</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Joyner Family home">
+      <span class="brand-mark">J</span>
+      <span><strong>THE JOYNER FAMILY</strong><small>OUR ROOTS. OUR MEMORIES. OUR LEGACY.</small></span>
+    </a>
+    <button id="installBtn" class="install-btn" hidden>Install app</button>
+  </header>
+
+  <div class="demo-notice"><strong>Prototype preview</strong> · Sample information only. Sign-in, invitations, uploads, and payments are not connected.</div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A FAMILY CONNECTED BY LEGACY</p>
+        <h1>One Family.<br><em>One Legacy.</em></h1>
+        <p>A place to reconnect, remember, celebrate, and preserve our story — wherever life takes us.</p>
+        <a class="gold-button" href="#events">Explore family events <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Decorative burgundy and gold family tree illustration">
+        <div class="tree-seal"><span>J</span><small>FAMILY</small></div>
+        <p>UNITED BY FAMILY<br><b>CONNECTED BY LEGACY</b></p>
+      </div>
+    </section>
+
+    <nav class="quick-nav" aria-label="Main sections">
+      <a href="#events"><span>▦</span>Events</a>
+      <a href="#gallery"><span>▧</span>Gallery</a>
+      <a href="#history"><span>♧</span>Our history</a>
+      <a href="#finance"><span>＄</span>Finance</a>
+      <a href="#directory"><span>♙</span>Directory</a>
+      <a href="#news"><span>✦</span>Family news</a>
+    </nav>
+
+    <section class="section-grid">
+      <article id="events" class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">SAVE THE DATE</p><h2>Upcoming family event</h2></div><span class="round-icon">▦</span></div>
+        <h3>2027 Joyner Family Reunion</h3>
+        <p class="muted">Date and location to be announced.</p>
+        <p class="muted">Help the planning team prepare by sharing your interest.</p>
+        <div class="inline-form">
+          <label for="rsvp">Your response</label>
+          <select id="rsvp"><option>Not responded</option><option>Attending</option><option>Maybe</option><option>Unable to attend</option></select>
+          <button id="saveRsvp" class="button">Save response</button>
+          <span id="rsvpStatus" class="status" aria-live="polite"></span>
+        </div>
+      </article>
+
+      <article id="news" class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">STAY CONNECTED</p><h2>Family announcements</h2></div><span class="round-icon">✦</span></div>
+        <ul class="announcement-list">
+          <li><span class="dot"></span><span><b>Welcome</b><small>Share a warm welcome with new family members.</small></span></li>
+          <li><span class="dot"></span><span><b>Celebrate</b><small>Recognize graduations, milestones, and achievements.</small></span></li>
+          <li><span class="dot"></span><span><b>Remember</b><small>Keep family stories and memories close.</small></span></li>
+        </ul>
+      </article>
+
+      <article id="finance" class="panel finance-panel">
+        <div class="panel-heading"><div><p class="eyebrow">SHARED RESPONSIBILITY</p><h2>Family finance</h2></div><span class="round-icon">＄</span></div>
+        <p class="muted">Illustrative reunion fund balance</p>
+        <div class="balance">$2,100.00</div>
+        <p class="muted small">Sample figure only — no funds are collected by this prototype.</p>
+        <a class="text-link" href="#resources">View finance planning notes →</a>
+      </article>
+
+      <article id="gallery" class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">MOMENTS THAT MATTER</p><h2>Family photo gallery</h2></div><span class="round-icon">▧</span></div>
+        <div class="photo-placeholder"><span>✧</span><p>Our memories belong together.</p></div>
+        <p class="muted">Future albums can be organized by reunion, year, family branch, and occasion.</p>
+      </article>
+
+      <article id="history" class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">WHERE WE COME FROM</p><h2>Our family history</h2></div><span class="round-icon">♧</span></div>
+        <p class="muted">Preserve family stories, biographies, genealogy, recipes, and historical records for generations to come.</p>
+        <a class="text-link" href="#resources">Explore archive planning →</a>
+      </article>
+
+      <article id="directory" class="panel">
+        <div class="panel-heading"><div><p class="eyebrow">STAY IN TOUCH</p><h2>Family directory</h2></div><span class="round-icon">♙</span></div>
+        <p class="muted">A private directory can include family relationships, contact preferences, birthdays, and household information.</p>
+        <p class="callout">Personal contact details should only be visible to approved members.</p>
+      </article>
+    </section>
+
+    <section id="resources" class="legacy-band">
+      <p class="eyebrow">PRESERVING OUR FAMILY HISTORY</p>
+      <h2>Our story deserves to be remembered.</h2>
+      <p>From the generations before us to the ones still to come, every story is part of the Joyner legacy.</p>
+    </section>
+
+    <section class="next-steps">
+      <p class="eyebrow">BEFORE A FAMILY-WIDE LAUNCH</p>
+      <h2>Build the private family foundation</h2>
+      <div class="steps">
+        <div><b>01</b><span>Choose administrators and approve membership requests.</span></div>
+        <div><b>02</b><span>Connect secure member sign-in and a protected database.</span></div>
+        <div><b>03</b><span>Set photo, document, and financial permissions.</span></div>
+        <div><b>04</b><span>Invite a small test group, then open access to the family.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><strong>THE JOYNER FAMILY</strong><span>United by family · Connected by legacy</span><small>Private family community · Prototype edition</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
